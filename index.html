@@ -1,13 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></link>
 </head>
+
 <body>
 
-    <h1>Hallo Dunia</h1>
-    
+    <div class="w-full flex justify-center items-center h-[100vh] flex-col bg-gradient-to-br from-gray-500 to-gray-900 text-white">
+
+
+        <img class="w-36 h-36 hover:scale-105 transition hover:cursor-pointer hover:-translate-y-4 p-1 rounded-full ring-2 ring-gray-300 hover:ring-pink-500 dark:ring-gray-500"
+            src="./profile.png" alt="Bordered avatar">
+
+            <h1 class="font-bold text-xl mt-1">@m.mattz_</h1>
+
+            <h4 class="mt-1 hover:underline hover:cursor-pointer">Frontend Web Developer</h4>
+
+            <h4 class="mt-4 mb-1 font-bold">About Me</h4>
+            <p class="max-w-md text-center">I am a regular frontend and backend developer who is used to using <span class="text-pink-500 font-bold">React JS</span> as Frontend and <span class="text-yellow-500 font-bold">NODE JS</span> as Backend and currently I am studying at a private university in Yogyakarta</p>
+
+            <div class="flex items-center gap-4 mt-4">
+                
+                <a href="https://www.linkedin.com/in/rahmat-suhadi" class="hover:scale-125 transition"  target="_blank"  class="hover:scale-125 transition" >
+                    <i class="fa-brands text-3xl fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/m.matt_/" target="_blank"  class="hover:scale-125 transition" >
+                    <i class="fa-brands text-3xl fa-instagram text-3xl"></i>
+                </a>
+
+                <a href="https://github.com/rahmatsuhadi" target="_blank"  class="hover:scale-125 transition" >
+                    <i class="fa-brands text-3xl fa-github"></i>
+                </a>
+
+                <a href="https://www.facebook.com/sayangkamu008/" target="_blank"  class="hover:scale-125 transition" >
+                    <i class="fa-brands text-3xl fa-facebook"></i>
+                </a>
+
+
+                <a  href="mailto:rahmatsuhadi32@email.com" target="_blank"  class="hover:scale-125 transition" >
+                    <i class="fa-regular  text-3xl fa-envelope"></i>
+                </a>
+
+            </div>
+
+    </div>
 </body>
+
 </html>
