@@ -109,7 +109,17 @@ header .container { display: flex; justify-content: space-between; align-items: 
 .cta-button.secondary { background-color: transparent; border: 1px solid var(--border-color); color: var(--text-primary); }
 .cta-button.secondary:hover { background-color: var(--card-color); border-color: var(--card-color); transform: translateY(-3px); }
 .hero-image { flex: 0 0 40%; max-width: 400px; }
-.hero-image img { width: 100%; border-radius: 50%; border: 5px solid var(--border-color); box-shadow: 0 10px 40px rgba(56, 189, 248, 0.1); }
+/* .hero-image img { width: 100%; border-radius: 50%; border: 5px solid var(--border-color); box-shadow: 0 10px 40px rgba(56, 189, 248, 0.1); } */
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* MEMBUAT KOTAK DENGAN RASIO 1:1 (PERSEGI) */
+    object-fit: cover;   /* MEMAKSA GAMBAR MENGISI KOTAK & MEMOTONG SISANYA */
+    border-radius: 50%;  /* MEMBUAT KOTAK MENJADI BULAT SEMPURNA */
+    border: 5px solid var(--border-color);
+    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.1);
+    transition: border-color 0.3s ease; /* Transisi untuk light/dark mode */
+}
 
 /* General Content Section Styling */
 .content-section { padding: 6rem 0; opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
