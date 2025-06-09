@@ -186,6 +186,44 @@ header .container { display: flex; justify-content: space-between; align-items: 
     color: #fff;
 }
 
+/* Skills & Certifications Section */
+.subsection-title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin: 3rem 0 1.5rem;
+}
+
+.skills-grid, .cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-card, .cert-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover, .cert-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+}
+
+.skill-card i, .cert-card i {
+    font-size: 1.2rem;
+}
+
 
 /* Experience & Education Styles (Unchanged) */
 .experience-education-layout { display: flex; justify-content: space-between; gap: 3rem; }
