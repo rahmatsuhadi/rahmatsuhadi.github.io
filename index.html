@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mattz | Rahmat Suhadi</title>
-    <meta name="description" content="Portofolio Rahmat Suhadi, seorang Frontend Web Developer dari Yogyakarta, Indonesia, yang ahli dalam React, Next.js, dan Tailwind CSS. Lihat proyek dan pengalaman saya.">
-    <meta name="keywords" content="Rahmat Suhadi, frontend developer, web developer, portfolio, React.js, Next.js, JavaScript, Tailwind CSS, Yogyakarta, Indonesia">
+    <meta name="description"
+        content="Portofolio Rahmat Suhadi, seorang Frontend Web Developer dari Yogyakarta, Indonesia, yang ahli dalam React, Next.js, dan Tailwind CSS. Lihat proyek dan pengalaman saya.">
+    <meta name="keywords"
+        content="Rahmat Suhadi, frontend developer, web developer, portfolio, React.js, Next.js, JavaScript, Tailwind CSS, Yogyakarta, Indonesia">
     <meta name="author" content="Rahmat Suhadi">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://rahmatsuhadi.github.io/"> <link rel="apple-touch-icon" sizes="180x180" href="profile/fav.svg">
+    <link rel="canonical" href="https://rahmatsuhadi.github.io/">
+    <link rel="apple-touch-icon" sizes="180x180" href="profile/fav.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="./profile/fav.svg">
     <link rel="icon" type="image/png" sizes="16x16" href="./profile/fav.svg">
     <meta name="msapplication-TileColor" content="#0F172A">
-    <meta name="theme-color" content="#0F172A"> <meta property="og:title" content="Rahmat Suhadi | Frontend Web Developer">
-    <meta property="og:description" content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS.">
+    <meta name="theme-color" content="#0F172A">
+    <meta property="og:title" content="Rahmat Suhadi | Frontend Web Developer">
+    <meta property="og:description"
+        content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rahmatsuhadi.github.io/"> 
-    <meta property="og:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg"> 
+    <meta property="og:url" content="https://rahmatsuhadi.github.io/">
+    <meta property="og:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="id_ID">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Rahmat Suhadi | Frontend Web Developer">
-    <meta name="twitter:description" content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS.">
-    <meta name="twitter:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg"> <meta name="twitter:site" content="@username_twitter_anda"> <link rel="stylesheet" href="style.css">
-    
+    <meta name="twitter:description"
+        content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS.">
+    <meta name="twitter:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg">
+    <meta name="twitter:site" content="@username_twitter_anda">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         // Cek tema tersimpan di localStorage dan terapkan di awal
-        (function() {
+        (function () {
             const theme = localStorage.getItem('theme');
             if (theme === 'light') {
                 document.documentElement.classList.add('light-mode');
             }
         })();
     </script>
+    <script>
+        (function (m, a, z, e) {
+            var s, t;
+            try {
+                t = m.sessionStorage.getItem('maze-us');
+            } catch (err) { }
+
+            if (!t) {
+                t = new Date().getTime();
+                try {
+                    m.sessionStorage.setItem('maze-us', t);
+                } catch (err) { }
+            }
+
+            s = a.createElement('script');
+            s.src = z + '?apiKey=' + e;
+            s.async = true;
+            a.getElementsByTagName('head')[0].appendChild(s);
+            m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'e3cf2d44-054e-4747-95ea-53c4356fda97');
+    </script>
 </head>
+
 <body class="dark-mode">
 
     <header>
@@ -46,8 +77,8 @@
             <div class="nav-links">
                 <a href="#about">Tentang</a>
                 <a href="#projects">Project</a>
-                 <a href="#skills">Keahlian</a> 
-                 <a href="#experience">Pengalaman</a>
+                <a href="#skills">Keahlian</a>
+                <a href="#experience">Pengalaman</a>
                 <a href="#contact">Kontak</a>
             </div>
             <div class="nav-controls">
@@ -74,7 +105,8 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="cta-button primary">Hubungi Saya</a>
-                        <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank" class="cta-button secondary">Lihat LinkedIn <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank"
+                            class="cta-button secondary">Lihat LinkedIn <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -84,24 +116,31 @@
         </section>
 
         <section id="about" class="content-section">
-             <div class="container">
+            <div class="container">
                 <div class="section-title">
                     <span>Tentang Saya</span>
                     <h2>Mengenal Saya Lebih Dekat</h2>
                 </div>
                 <div class="about-content">
                     <p>
-                                                Saya adalah seorang Web Developer yang berfokus pada pengembangan aplikasi web modern dengan pendekatan yang efisien, bersih, dan berorientasi pada pengalaman pengguna. Keahlian utama saya berada di sisi frontend, khususnya dengan React.js, serta didukung oleh fondasi yang solid dalam backend development menggunakan Python dan Node.js.
+                        Saya adalah seorang Web Developer yang berfokus pada pengembangan aplikasi web modern dengan
+                        pendekatan yang efisien, bersih, dan berorientasi pada pengalaman pengguna. Keahlian utama saya
+                        berada di sisi frontend, khususnya dengan React.js, serta didukung oleh fondasi yang solid dalam
+                        backend development menggunakan Python dan Node.js.
 
-Dengan semangat tinggi terhadap pembelajaran berkelanjutan, saya selalu mengikuti perkembangan teknologi terbaru untuk memastikan setiap solusi yang saya bangun relevan, optimal, dan scalable. Saya percaya bahwa kolaborasi yang baik dalam tim serta perhatian terhadap detail adalah kunci untuk menghasilkan produk digital yang unggul.
+                        Dengan semangat tinggi terhadap pembelajaran berkelanjutan, saya selalu mengikuti perkembangan
+                        teknologi terbaru untuk memastikan setiap solusi yang saya bangun relevan, optimal, dan
+                        scalable. Saya percaya bahwa kolaborasi yang baik dalam tim serta perhatian terhadap detail
+                        adalah kunci untuk menghasilkan produk digital yang unggul.
 
-Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana saya bisa menggabungkan kemampuan teknis dengan kreativitas untuk memberikan hasil yang berdampak nyata.
+                        Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana saya bisa
+                        menggabungkan kemampuan teknis dengan kreativitas untuk memberikan hasil yang berdampak nyata.
 
                     </p>
                 </div>
             </div>
         </section>
-        
+
         <section id="projects" class="content-section">
             <div class="container">
                 <div class="section-title">
@@ -109,7 +148,7 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
                     <h2>Karya dan Proyek Saya</h2>
                 </div>
                 <div class="projects-grid">
-                    
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./project/project-one.png" alt="Project Khayangan">
@@ -117,41 +156,46 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
                         <div class="project-content">
                             <h3>Khayangan</h3>
                             <p class="project-description">Website manage hypervisor Openstack dan VMWARE.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – membuat layout halaman dan integrasi API menggunakan GraphQL.</p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – membuat layout halaman
+                                dan integrasi API menggunakan GraphQL.</p>
                             <div class="project-tech">
                                 <span>React</span><span>Next JS</span><span>Tailwind CSS</span><span>GraphQL</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./project/project-two.png" alt="Project Parisada">
                         </div>
                         <div class="project-content">
                             <h3>Parisada</h3>
-                            <p class="project-description">Website Meet Converance untuk Meeting Dengan Fitur Chat Dan Share Screen.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend & Backend – membangun seluruh antarmuka dan sistem agar berjalan dan berintegrasi.</p>
+                            <p class="project-description">Website Meet Converance untuk Meeting Dengan Fitur Chat Dan
+                                Share Screen.</p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend & Backend – membangun seluruh
+                                antarmuka dan sistem agar berjalan dan berintegrasi.</p>
                             <div class="project-tech">
                                 <span>React</span><span>Next JS</span><span>Tailwind CSS</span><span>Rest API</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./project/project-three.png" alt="Project Panenin">
                         </div>
                         <div class="project-content">
                             <h3>Panenin</h3>
-                            <p class="project-description">Platform e-commerce hasil pertanian lokal berbasis komunitas.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – menangani tampilan Dashboard Admin untuk manage produk, dan halaman transaksi.</p>
+                            <p class="project-description">Platform e-commerce hasil pertanian lokal berbasis komunitas.
+                            </p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – menangani tampilan
+                                Dashboard Admin untuk manage produk, dan halaman transaksi.</p>
                             <div class="project-tech">
                                 <span>React</span><span>Next JS</span><span>Tailwind CSS</span><span>GraphQL</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./project/project-four.png" alt="Project Sellon">
@@ -159,7 +203,8 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
                         <div class="project-content">
                             <h3>Sellon Marketplace</h3>
                             <p class="project-description">Marketplace mobile app untuk produk lokal dan UMKM.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – mengembangkan antarmuka aplikasi mobile dengan React Native.</p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – mengembangkan antarmuka
+                                aplikasi mobile dengan React Native.</p>
                             <div class="project-tech">
                                 <span>React Native</span><span>GraphQL</span>
                             </div>
@@ -168,26 +213,29 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
 
                     <div class="project-card">
                         <div class="project-image">
-                           <img src="./project/project-five.png" alt="Project BDA">
+                            <img src="./project/project-five.png" alt="Project BDA">
                         </div>
                         <div class="project-content">
                             <h3>Bda Mencari Bakat – Form Register</h3>
                             <p class="project-description">Formulir pendaftaran event pencarian bakat Form Lomba.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – membangun form multi-step dengan validasi dan integrasi GraphQL.</p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – membangun form
+                                multi-step dengan validasi dan integrasi GraphQL.</p>
                             <div class="project-tech">
                                 <span>React</span><span>Next JS</span><span>Tailwind CSS</span><span>GraphQL</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-image">
-                           <img src="./project/project-six.png" alt="Project TBY">
+                            <img src="./project/project-six.png" alt="Project TBY">
                         </div>
                         <div class="project-content">
                             <h3>Taman Budaya Yogyakarta</h3>
-                            <p class="project-description">Situs resmi Taman Budaya Yogyakarta yang menampilkan event, galeri, dan sistem booking.</p>
-                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – mengembangkan fitur Booking Reservasi pada sistem berbasis Yii dan Bootstrap.</p>
+                            <p class="project-description">Situs resmi Taman Budaya Yogyakarta yang menampilkan event,
+                                galeri, dan sistem booking.</p>
+                            <p class="project-role"><strong>Peran:</strong> Frontend Developer – mengembangkan fitur
+                                Booking Reservasi pada sistem berbasis Yii dan Bootstrap.</p>
                             <div class="project-tech">
                                 <span>Yii 2</span><span>MySQL</span><span>Bootstrap</span>
                             </div>
@@ -253,16 +301,19 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
 
         <section id="contact" class="content-section">
             <div class="container">
-                 <div class="section-title">
+                <div class="section-title">
                     <span>Kontak</span>
                     <h2>Mari Berkolaborasi</h2>
                 </div>
                 <p class="contact-pitch">
-                    Saya terbuka untuk diskusi mengenai proyek baru atau peluang kolaborasi. Jangan ragu untuk menghubungi saya.
+                    Saya terbuka untuk diskusi mengenai proyek baru atau peluang kolaborasi. Jangan ragu untuk
+                    menghubungi saya.
                 </p>
                 <div class="contact-links">
-                    <a href="mailto:rahmatsuhadi32@gmail.com" class="contact-button"><i class="fas fa-envelope"></i> rahmatsuhadi32@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank" class="contact-button"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+                    <a href="mailto:rahmatsuhadi32@gmail.com" class="contact-button"><i class="fas fa-envelope"></i>
+                        rahmatsuhadi32@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank" class="contact-button"><i
+                            class="fab fa-linkedin"></i> LinkedIn Profile</a>
                 </div>
             </div>
         </section>
@@ -277,4 +328,5 @@ Saya siap untuk berkontribusi pada proyek-proyek inovatif dan menantang, di mana
 
     <script src="script.js"></script>
 </body>
+
 </html>
