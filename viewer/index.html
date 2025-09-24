@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Live Testing Viewer</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+    <!-- MASUKKAN MAZE SNIPPET DI SINI -->
+    <script type="text/javascript" src="https://cdn.maze.co/maze.js"></script>
+    <script>
+        (function (m, a, z, e) {
+            var s, t;
+            try {
+                t = m.sessionStorage.getItem('maze-us');
+            } catch (err) { }
+
+            if (!t) {
+                t = new Date().getTime();
+                try {
+                    m.sessionStorage.setItem('maze-us', t);
+                } catch (err) { }
+            }
+
+            s = a.createElement('script');
+            s.src = z + '?apiKey=' + e;
+            s.async = true;
+            a.getElementsByTagName('head')[0].appendChild(s);
+            m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'e3cf2d44-054e-4747-95ea-53c4356fda97');
+    </script>
+</head>
+
+<body>
+    <iframe id="dynamicIframe" src=""></iframe>
+
+    <script>
+        // Ambil parameter 'url' dari query string
+        const params = new URLSearchParams(window.location.search);
+        const url = params.get('url');
+
+        // Validasi sederhana
+        if (url) {
+            document.getElementById('dynamicIframe').src = url;
+        } else {
+            document.body.innerHTML = "<p>URL tidak ditemukan. Gunakan ?url=HALAMAN_KLON</p>";
+        }
+    </script>
+
+
+</body>
+
+</html>
