@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const typingElement = document.querySelector(".typing-effect");
-  const typingTexts = ["Frontend Web Developer", "React Enthusiast"];
+  const typingTexts = ["Pengalaman Digital", "Aplikasi Web Modern", "Solusi Skalabel"];
   let typingIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

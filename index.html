@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mattz | Rahmat Suhadi</title>
+    <title>Rahmat Suhadi | Frontend Developer</title>
     <meta
       name="description"
-      content="Portofolio Rahmat Suhadi, seorang Frontend Web Developer dari Yogyakarta, Indonesia, yang ahli dalam React, Next.js, dan Tailwind CSS. Lihat proyek dan pengalaman saya."
+      content="Portofolio Rahmat Suhadi, Frontend Web Developer spesialis React, Next.js, dan modern UI/UX."
     />
     <meta
       name="keywords"
@@ -18,58 +18,23 @@
     <link rel="apple-touch-icon" sizes="180x180" href="profile/fav.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="./profile/fav.svg" />
     <link rel="icon" type="image/png" sizes="16x16" href="./profile/fav.svg" />
-    <meta name="msapplication-TileColor" content="#0F0A1F" />
-    <meta name="theme-color" content="#0F0A1F" />
+    <meta name="theme-color" content="#050505" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rahmatsuhadi.github.io/" />
-    <meta
-      property="og:title"
-      content="Rahmat Suhadi | Frontend Web Developer"
-    />
-    <meta
-      property="og:description"
-      content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS."
-    />
-    <meta
-      property="og:image"
-      content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://rahmatsuhadi.github.io/" />
-    <meta
-      property="twitter:title"
-      content="Rahmat Suhadi | Frontend Web Developer"
-    />
-    <meta
-      property="twitter:description"
-      content="Portofolio seorang Frontend Web Developer dari Yogyakarta, ahli dalam React, Next.js, dan Tailwind CSS."
-    />
-    <meta
-      property="twitter:image"
-      content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg"
-    />
-
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
+    
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <!-- Theme Check Script -->
+    <!-- Theme Check -->
     <script>
       (function () {
         const theme = localStorage.getItem("theme");
@@ -82,15 +47,16 @@
 
   <body>
     <header>
-      <nav class="container glass-nav">
+      <div class="container">
         <a href="#hero" class="logo">mattz.</a>
-        <div class="nav-links">
+        
+        <nav class="nav-links">
           <a href="#about">Tentang</a>
           <a href="#projects">Project</a>
-          <a href="#skills">Keahlian</a>
           <a href="#experience">Pengalaman</a>
           <a href="#contact">Kontak</a>
-        </div>
+        </nav>
+
         <div class="nav-controls">
           <button id="theme-toggle" aria-label="Toggle light and dark mode">
             <i class="fas fa-moon"></i>
@@ -102,25 +68,22 @@
             <span></span>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main>
       <section id="hero" class="hero-section">
-        <div class="hero-bg-gradient"></div>
         <div class="container hero-layout">
           <div class="hero-text animate-on-scroll">
-            <p class="hero-intro">Halo, saya</p>
+            <p class="hero-intro">Frontend Developer</p>
             <h1>Rahmat Suhadi</h1>
-            <h2>Saya seorang <span class="typing-effect"></span></h2>
+            <h2>Membangun <span class="typing-effect"></span></h2>
             <p class="hero-summary">
-              Mahasiswa dan developer dengan fokus pada pengembangan antarmuka
-              web yang modern, intuitif, dan berorientasi pada pengalaman
-              pengguna.
+              Fokus menciptakan pengalaman web yang modern, performa tinggi, dan mudah digunakan.
             </p>
             <div class="hero-buttons">
-              <a href="#contact" class="cta-button primary">
-                <span>Hubungi Saya</span>
+              <a href="#projects" class="cta-button primary">
+                Lihat Karya
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
               <a
@@ -129,15 +92,14 @@
                 class="cta-button secondary"
               >
                 <i class="fa-brands fa-linkedin"></i>
-                <span>Lihat LinkedIn</span>
+                LinkedIn
               </a>
             </div>
           </div>
           <div class="hero-image-wrapper animate-on-scroll">
-            <div class="hero-image-glow"></div>
             <img
               src="./profile/me_no_exif.jpg"
-              alt="Foto Profil Rahmat Suhadi"
+              alt="Rahmat Suhadi"
               class="hero-image"
             />
           </div>
@@ -147,25 +109,17 @@
       <section id="about" class="content-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Tentang Saya</span>
-            <h2>Mengenal Saya Lebih Dekat</h2>
+            <span class="section-subtitle">01. Tentang Saya</span>
+            <h2>Detail & Kreativitas</h2>
           </div>
-          <div class="about-content glass-card animate-on-scroll">
+          <div class="about-content animate-on-scroll">
             <p>
-              Saya adalah seorang Web Developer yang berfokus pada pengembangan
-              aplikasi web modern dengan pendekatan yang efisien, bersih, dan
-              berorientasi pada pengalaman pengguna. Keahlian utama saya berada
-              di sisi frontend, khususnya dengan React.js, serta didukung oleh
-              fondasi yang solid dalam backend development menggunakan Python
-              dan Node.js. Dengan semangat tinggi terhadap pembelajaran
-              berkelanjutan, saya selalu mengikuti perkembangan teknologi
-              terbaru untuk memastikan setiap solusi yang saya bangun relevan,
-              optimal, dan scalable. Saya percaya bahwa kolaborasi yang baik
-              dalam tim serta perhatian terhadap detail adalah kunci untuk
-              menghasilkan produk digital yang unggul. Saya siap untuk
-              berkontribusi pada proyek-proyek inovatif dan menantang, di mana
-              saya bisa menggabungkan kemampuan teknis dengan kreativitas untuk
-              memberikan hasil yang berdampak nyata.
+              Saya adalah web developer yang berbasis di Yogyakarta. Saya percaya bahwa kode yang baik harus bersih, efisien, dan mudah dipelihara.
+              Spesialisasi saya adalah ekosistem JavaScript (React, Next.js) dengan ketertarikan mendalam pada desain antarmuka.
+            </p>
+            <br>
+            <p>
+              Saat ini saya aktif mengembangkan solusi digital yang tidak hanya berfungsi dengan baik, tetapi juga memberikan pengalaman visual yang menyenangkan bagi pengguna.
             </p>
           </div>
         </div>
@@ -174,185 +128,142 @@
       <section id="projects" class="content-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Portofolio</span>
-            <h2>Karya dan Proyek Saya</h2>
+            <span class="section-subtitle">02. Selected Work</span>
+            <h2>Proyek Unggulan</h2>
           </div>
           <div class="projects-grid">
-            <div class="project-card glass-card animate-on-scroll">
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="./project/project-seven.png" alt="Project Dearly" />
+              </div>
+              <div class="project-content">
+                <h3>Dearly</h3>
+                <p class="project-description">
+                  Platform undangan pernikahan digital inovatif dengan manajemen Dashboard tamu komprehensif dan integrasi AI untuk pembuatan konten personal.
+                </p>
+                <div class="project-tech">
+                  <span>Next.js</span><span>Tailwind</span><span>Framer Motion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-one.png" alt="Project Khayangan" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
                 <h3>Khayangan</h3>
                 <p class="project-description">
-                  Website manage hypervisor Openstack dan VMWARE.
+                  Dashboard terpusat untuk orkestrasi dan manajemen resource hypervisor OpenStack serta VMware, dirancang untuk efisiensi infrastruktur cloud.
                 </p>
                 <div class="project-tech">
-                  <span>React</span><span>Next JS</span><span>Tailwind CSS</span
-                  ><span>GraphQL</span>
+                  <span>Next.js</span><span>Tailwind</span><span>GraphQL</span>
                 </div>
               </div>
             </div>
-            <div class="project-card glass-card animate-on-scroll">
+
+            <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-two.png" alt="Project Parisada" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
                 <h3>Parisada</h3>
                 <p class="project-description">
-                  Website Meet Conference dengan fitur Chat Dan Share Screen.
+                  Solusi konferensi video real-time responsif yang dilengkapi dengan fitur chat interaktif, berbagi layar, dan kolaborasi berbasis WebRTC.
                 </p>
                 <div class="project-tech">
-                  <span>React</span><span>Next JS</span><span>Tailwind CSS</span
-                  ><span>Rest API</span>
+                  <span>React</span><span>WebRTC</span><span>REST API</span>
                 </div>
               </div>
             </div>
-            <div class="project-card glass-card animate-on-scroll">
+
+            <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-three.png" alt="Project Panenin" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
                 <h3>Panenin</h3>
                 <p class="project-description">
-                  Platform e-commerce hasil pertanian lokal berbasis komunitas.
+                   Ekosistem e-commerce yang memberdayakan petani lokal dengan menghubungkan mereka langsung ke konsumen melalui platform jual-beli hasil tani yang efisien.
                 </p>
                 <div class="project-tech">
-                  <span>React</span><span>Next JS</span><span>Tailwind CSS</span
-                  ><span>GraphQL</span>
+                  <span>Next.js</span><span>Tailwind</span>
                 </div>
               </div>
             </div>
-            <div class="project-card glass-card animate-on-scroll">
+            
+             <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-four.png" alt="Project Sellon" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
-                <h3>Sellon Marketplace</h3>
+                <h3>Sellon</h3>
                 <p class="project-description">
-                  Marketplace mobile app untuk produk lokal dan UMKM.
+                  Aplikasi mobile marketplace yang dirancang khusus untuk memperluas jangkauan pasar digital bagi UMKM dan produk lokal.
                 </p>
                 <div class="project-tech">
                   <span>React Native</span><span>GraphQL</span>
                 </div>
               </div>
             </div>
-            <div class="project-card glass-card animate-on-scroll">
+
+            <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-five.png" alt="Project BDA" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
-                <h3>Bda Mencari Bakat</h3>
+                <h3>BDA Talent</h3>
                 <p class="project-description">
-                  Formulir pendaftaran event pencarian bakat.
+                  Sistem informasi manajemen pendaftaran dan seleksi peserta yang terukur untuk kompetisi pencarian bakat berskala nasional.
                 </p>
                 <div class="project-tech">
-                  <span>React</span><span>Next JS</span><span>Tailwind CSS</span
-                  ><span>GraphQL</span>
+                  <span>Next.js</span><span>Tailwind</span>
                 </div>
               </div>
             </div>
-            <div class="project-card glass-card animate-on-scroll">
+
+            <div class="project-card animate-on-scroll">
               <div class="project-image">
                 <img src="./project/project-six.png" alt="Project TBY" />
-                <div class="project-overlay"></div>
               </div>
               <div class="project-content">
-                <h3>Taman Budaya Yogyakarta</h3>
+                <h3>Taman Budaya</h3>
                 <p class="project-description">
-                  Situs resmi TBY dengan event, galeri, dan sistem booking.
+                  Sistem reservasi gedung dan manajemen jadwal acara yang terintegrasi penuh untuk optimalisasi operasional Taman Budaya Yogyakarta.
                 </p>
                 <div class="project-tech">
-                  <span>Yii 2</span><span>MySQL</span><span>Bootstrap</span>
+                  <span>Yii 2</span><span>Bootstrap</span><span>MYSql</span>
                 </div>
               </div>
             </div>
+             <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="./project/project-eight.png" alt="Project SlemanMart" />
+              </div>
+              <div class="project-content">
+                <h3>SlemanMart</h3>
+                <p class="project-description">
+                  Platform marketplace terpadu yang memfasilitasi transaksi digital dan promosi produk unggulan UMKM di wilayah Sleman.
+                </p>
+                <div class="project-tech">
+                  <span>Next.js</span><span>Tailwind</span><span>Rest API</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section id="skills" class="content-section">
-        <div class="container">
-          <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Keahlian Saya</span>
-            <h2>Teknologi & Sertifikasi</h2>
-          </div>
-          <h3 class="subsection-title animate-on-scroll">
-            Teknologi yang Dikuasai
-          </h3>
-          <div class="skills-grid">
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fab fa-react"></i> React.js
-            </div>
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fab fa-js-square"></i> JavaScript
-            </div>
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fa-solid fa-code"></i> TypeScript
-            </div>
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fa-brands fa-figma"></i> Figma
-            </div>
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fab fa-python"></i> Python
-            </div>
-            <div class="skill-card glass-card animate-on-scroll">
-              <i class="fab fa-node-js"></i> Node.js
-            </div>
-          </div>
-          <h3 class="subsection-title animate-on-scroll">Sertifikasi</h3>
-          <div class="cert-grid">
-            <div class="cert-card glass-card animate-on-scroll">
-              <i class="fas fa-award"></i>
-              <div class="cert-details">
-                <h4>React.JS for Ecommerce</h4>
-                <p>Sertifikasi pembuatan E-commerce dengan React</p>
-              </div>
-            </div>
-            <div class="cert-card glass-card animate-on-scroll">
-              <i class="fas fa-award"></i>
-              <div class="cert-details">
-                <h4>UI/UX App Design with Figma</h4>
-                <p>Sertifikasi desain UI/UX menggunakan Figma</p>
-              </div>
-            </div>
-            <div class="cert-card glass-card animate-on-scroll">
-              <i class="fas fa-award"></i>
-              <div class="cert-details">
-                <h4>RevoU Mini Course Data Analytics</h4>
-                <p>Kursus singkat analisis data oleh RevoU</p>
-              </div>
-            </div>
-            <div class="cert-card glass-card animate-on-scroll">
-              <i class="fas fa-award"></i>
-              <div class="cert-details">
-                <h4>Machine Learning (FGA)</h4>
-                <p>Sertifikasi Machine Learning dari Fresh Graduate Academy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- GANTI BAGIAN INI -->
       <section id="experience" class="content-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Perjalanan Karir</span>
-            <h2>Pengalaman & Pendidikan</h2>
+            <span class="section-subtitle">03. Pengalaman</span>
+            <h2>Jejak Karir</h2>
           </div>
 
           <div class="experience-grid">
-            <!-- Pengalaman Kerja -->
-            <div
-              class="experience-card glass-card animate-on-scroll"
-              data-type="work"
-            >
+            <div class="experience-card glass-card animate-on-scroll" data-type="work">
               <div class="exp-icon">
                 <i class="fas fa-briefcase"></i>
               </div>
@@ -361,34 +272,12 @@
                 <p class="company">PT. Daya Gagas Internasional</p>
                 <p class="date">Agustus 2025 - Desember 2025</p>
                 <p class="exp-description">
-                  Bertanggung jawab atas pengembangan UI untuk aplikasi
-                  manajemen cloud internal.
+                  Mengembangkan UI untuk sistem manajemen cloud internal, meningkatkan efisiensi operasional tim IT.
                 </p>
               </div>
             </div>
 
-            <!-- Pendidikan -->
-            <div
-              class="experience-card glass-card animate-on-scroll"
-              data-type="education"
-            >
-              <div class="exp-icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <div class="exp-content">
-                <h4>Associate's degree, Information Technology</h4>
-                <p class="company">Universitas AMIKOM Yogyakarta</p>
-                <p class="date">September 2023 - Saat Ini</p>
-                <p class="exp-description">
-                  Mendalami pengembangan perangkat lunak dan ilmu komputer.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="experience-card glass-card animate-on-scroll"
-              data-type="work"
-            >
+            <div class="experience-card glass-card animate-on-scroll" data-type="work">
               <div class="exp-icon">
                 <i class="fas fa-briefcase"></i>
               </div>
@@ -397,41 +286,77 @@
                 <p class="company">PT. Carakan Sadhana Dirgantara</p>
                 <p class="date">September 2021 - Juli 2025</p>
                 <p class="exp-description">
-                  Mengembangkan berbagai proyek klien dengan fokus pada React.js
-                  dan Next.js.
+                  Memimpin pengembangan frontend untuk berbagai klien korporat, fokus pada performa dan skalabilitas aplikasi.
                 </p>
+              </div>
+            </div>
+
+            <div class="experience-card glass-card animate-on-scroll" data-type="education">
+              <div class="exp-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="exp-content">
+                <h4>Information Technology</h4>
+                <p class="company">Universitas AMIKOM Yogyakarta</p>
+                <p class="date">2023 - Sekarang</p>
+                <p class="exp-description">
+                  Fokus akademik pada Software Engineering dan Artificial Intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-section">
+            <div class="section-header animate-on-scroll" style="margin-bottom: 2rem; text-align: left;">
+             <h3>Tech Stack</h3>
+            </div>
+            <div class="skills-grid animate-on-scroll">
+               <div class="skill-card glass-card">
+                 <i class="fab fa-react"></i>
+                 <span>React</span>
+               </div>
+               <div class="skill-card glass-card">
+                 <i class="fab fa-js"></i>
+                 <span>JavaScript</span>
+               </div>
+               <div class="skill-card glass-card">
+                 <i class="fab fa-node"></i>
+                 <span>Node.js</span>
+               </div>
+               <div class="skill-card glass-card">
+                 <i class="fab fa-python"></i>
+                 <span>Python</span>
+               </div>
+               <div class="skill-card glass-card">
+                 <i class="fab fa-figma"></i>
+                 <span>Figma</span>
+               </div>
+               <div class="skill-card glass-card">
+                <i class="fa-solid fa-database"></i>
+                <span>SQL</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- SAMPAI SINI -->
 
       <section id="contact" class="content-section">
         <div class="container">
           <div class="section-header animate-on-scroll">
-            <span class="section-subtitle">Kontak</span>
-            <h2>Mari Berkolaborasi</h2>
+            <span class="section-subtitle">04. Kontak</span>
+            <h2>Mari Terhubung</h2>
           </div>
           <p class="contact-pitch animate-on-scroll">
-            Saya terbuka untuk diskusi mengenai proyek baru atau peluang
-            kolaborasi. Jangan ragu untuk menghubungi saya.
+            Tertarik bekerja sama atau sekadar ingin menyapa? Saya selalu terbuka untuk diskusi baru.
           </p>
           <div class="contact-links animate-on-scroll">
-            <a
-              href="mailto:rahmatsuhadi32@gmail.com"
-              class="contact-button glass-card"
-            >
+            <a href="mailto:rahmatsuhadi32@gmail.com" class="cta-button primary">
               <i class="fas fa-envelope"></i>
-              <span>rahmatsuhadi32@gmail.com</span>
+              Kirim Email
             </a>
-            <a
-              href="https://www.linkedin.com/in/rahmat-suhadi"
-              target="_blank"
-              class="contact-button glass-card"
-            >
+            <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank" class="cta-button secondary">
               <i class="fab fa-linkedin"></i>
-              <span>LinkedIn Profile</span>
+              LinkedIn
             </a>
           </div>
         </div>
@@ -441,29 +366,13 @@
     <footer>
       <div class="container">
         <div class="footer-content">
-          <p>
-            &copy; 2025 Rahmat Suhadi. Dibuat dengan
-            <i class="fas fa-heart"></i> dan banyak kopi.
-          </p>
+          <div class="copyright">
+             &copy; 2026 Rahmat Suhadi.
+          </div>
           <div class="social-links">
-            <a
-              href="https://github.com/rahmatsuhadi"
-              target="_blank"
-              aria-label="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/rahmat-suhadi"
-              target="_blank"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              href="https://instagram.com/rahmatsuhadi_"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <a href="https://github.com/rahmatsuhadi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/rahmatsuhadi_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
