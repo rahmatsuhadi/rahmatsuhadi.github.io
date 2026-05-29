@@ -87,11 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+    const intersectingEntries = entries.filter(entry => entry.isIntersecting);
+    
+    intersectingEntries.forEach((entry, index) => {
+      setTimeout(() => {
         entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
+      }, index * 100); // Stagger 100ms
+      observer.unobserve(entry.target);
     });
   }, observerOptions);
 
@@ -118,5 +120,38 @@ document.addEventListener("DOMContentLoaded", function () {
         item.classList.add("active");
       }
     });
+  });
+
+  // Cursor Sparkle Effect
+  const createSparkle = (e) => {
+    const sparkle = document.createElement("div");
+    sparkle.className = "cursor-sparkle";
+    
+    sparkle.style.left = `${e.clientX}px`;
+    sparkle.style.top = `${e.clientY}px`;
+    
+    const size = Math.random() * 6 + 4;
+    sparkle.style.width = `${size}px`;
+    sparkle.style.height = `${size}px`;
+
+    const tx = (Math.random() - 0.5) * 40;
+    const ty = (Math.random() - 0.5) * 40;
+    sparkle.style.setProperty("--tx", `${tx}px`);
+    sparkle.style.setProperty("--ty", `${ty}px`);
+    
+    document.body.appendChild(sparkle);
+    
+    setTimeout(() => {
+      sparkle.remove();
+    }, 1500);
+  };
+
+  let lastSparkleTime = 0;
+  document.addEventListener("mousemove", (e) => {
+    const now = Date.now();
+    if (now - lastSparkleTime > 15) {
+      createSparkle(e);
+      lastSparkleTime = now;
+    }
   });
 });
