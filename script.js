@@ -167,4 +167,34 @@ document.addEventListener("DOMContentLoaded", function () {
       lastSparkleTime = now;
     }
   });
+
+  // Background Geometry Parallax & Continuous Animation
+  const shapes = document.querySelectorAll(".geo-shape");
+  let time = 0;
+  
+  function animateGeometry() {
+    time += 0.01;
+    const scrollY = window.scrollY;
+    
+    shapes.forEach((shape, index) => {
+      const speed = (index + 1) * 0.1;
+      const rotationSpeed = (index + 1) * 0.05;
+      const dir = index % 2 === 0 ? 1 : -1;
+      
+      const scrollYPos = scrollY * speed * dir;
+      const scrollRot = scrollY * rotationSpeed * dir;
+      
+      // Continuous floating movement
+      const floatX = Math.sin(time + index) * 40;
+      const floatY = Math.cos(time + index * 2) * 40;
+      const floatRot = Math.sin(time * 0.5 + index) * 20;
+      const floatScale = 1 + Math.sin(time + index) * 0.15;
+      
+      shape.style.transform = `translate(${floatX}px, ${scrollYPos + floatY}px) rotate(${scrollRot + floatRot}deg) scale(${floatScale})`;
+    });
+    
+    requestAnimationFrame(animateGeometry);
+  }
+  
+  animateGeometry();
 });
