@@ -258,6 +258,7 @@ html.light-mode #theme-toggle .fa-moon { display: none; }
 
 .hero-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
