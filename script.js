@@ -30,6 +30,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Floating Mobile Navbar Scroll Animation
+  window.addEventListener("scroll", () => {
+    if (window.innerWidth <= 768) {
+      if (window.scrollY > 150) {
+        navLinks.classList.add("show-nav");
+      } else {
+        navLinks.classList.remove("show-nav");
+      }
+    } else {
+      navLinks.classList.remove("show-nav");
+    }
+  });
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
