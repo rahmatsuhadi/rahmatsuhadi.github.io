@@ -41,6 +41,9 @@ const translations = {
     "exp.edu.desc": "Fokus akademik di bidang Informatika dengan peminatan utama pada <i>Web Programming</i>. Turut mempelajari serta mempraktikkan perancangan infrastruktur aplikasi web dan integrasi sistem <i>Artificial Intelligence</i> (AI).",
     
     "skills.title": "Tech Stack",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend & Database",
+    "skills.tools": "Tools & Others",
     
     "contact.subtitle": "04. Kontak",
     "contact.title": "Mari Terhubung",
@@ -89,6 +92,9 @@ const translations = {
     "exp.edu.desc": "Academic focus in Informatics with a primary concentration in <i>Web Programming</i>. Also studying and practicing web application infrastructure design and <i>Artificial Intelligence</i> (AI) systems integration.",
     
     "skills.title": "Tech Stack",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend & Database",
+    "skills.tools": "Tools & Others",
     
     "contact.subtitle": "04. Contact",
     "contact.title": "Let's Connect",

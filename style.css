@@ -582,6 +582,19 @@ html.light-mode #theme-toggle .fa-moon { display: none; }
 }
 
 /* Skills */
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.category-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
