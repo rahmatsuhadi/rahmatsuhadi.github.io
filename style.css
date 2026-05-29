@@ -234,6 +234,29 @@ header .container {
   gap: 1rem;
 }
 
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: var(--accent-primary);
+  color: var(--bg-color);
+  border-color: var(--accent-primary);
+}
+
 #theme-toggle {
   background: transparent;
   border: 1px solid var(--border-color);
@@ -728,7 +751,7 @@ footer {
 }
 
 .mobile-icon {
-  display: none;
+  display: none !important;
 }
 
 /* Responsive */
@@ -798,7 +821,7 @@ footer {
   }
 
   .mobile-icon {
-    display: block;
+    display: inline-block !important;
     font-size: 1.2rem;
   }
   

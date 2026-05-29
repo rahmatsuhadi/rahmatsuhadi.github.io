@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rahmat Suhadi | Full Stack Developer</title>
-  <meta name="description" content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
-  <meta name="keywords" content="Rahmat Suhadi, full stack developer, frontend developer, web developer, portfolio, React.js, Next.js, JavaScript, Tailwind CSS, Yogyakarta, Indonesia" />
+  <meta name="description"
+    content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
+  <meta name="keywords"
+    content="Rahmat Suhadi, full stack developer, frontend developer, web developer, portfolio, React.js, Next.js, JavaScript, Tailwind CSS, Yogyakarta, Indonesia" />
   <meta name="author" content="Rahmat Suhadi" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://rahmatsuhadi.github.io/" />
@@ -15,14 +17,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rahmatsuhadi.github.io/" />
   <meta property="og:title" content="Rahmat Suhadi | Full Stack Developer" />
-  <meta property="og:description" content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
+  <meta property="og:description"
+    content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
   <meta property="og:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://rahmatsuhadi.github.io/" />
   <meta property="twitter:title" content="Rahmat Suhadi | Full Stack Developer" />
-  <meta property="twitter:description" content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
+  <meta property="twitter:description"
+    content="Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX." />
   <meta property="twitter:image" content="https://rahmatsuhadi.github.io/profile/me_no_exif.jpg" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="./profile/favicon.svg" />
@@ -69,13 +73,18 @@
       <a href="#hero" class="logo">mattz.</a>
 
       <nav class="nav-links">
-        <a href="#about"><i class="fas fa-user mobile-icon"></i><span class="nav-text">Tentang</span></a>
-        <a href="#projects"><i class="fas fa-layer-group mobile-icon"></i><span class="nav-text">Project</span></a>
-        <a href="#experience"><i class="fas fa-briefcase mobile-icon"></i><span class="nav-text">Pengalaman</span></a>
-        <a href="#contact"><i class="fas fa-envelope mobile-icon"></i><span class="nav-text">Kontak</span></a>
+        <a href="#about"><i class="fas fa-user mobile-icon"></i><span class="nav-text"
+            data-i18n="nav.about">Tentang</span></a>
+        <a href="#projects"><i class="fas fa-layer-group mobile-icon"></i><span class="nav-text"
+            data-i18n="nav.projects">Project</span></a>
+        <a href="#experience"><i class="fas fa-briefcase mobile-icon"></i><span class="nav-text"
+            data-i18n="nav.experience">Pengalaman</span></a>
+        <a href="#contact"><i class="fas fa-envelope mobile-icon"></i><span class="nav-text"
+            data-i18n="nav.contact">Kontak</span></a>
       </nav>
 
       <div class="nav-controls">
+        <button id="lang-toggle" class="lang-btn" aria-label="Toggle language">ID</button>
         <button id="theme-toggle" aria-label="Toggle light and dark mode">
           <i class="fas fa-moon"></i>
           <i class="fas fa-sun"></i>
@@ -93,20 +102,20 @@
     <section id="hero" class="hero-section">
       <div class="container hero-layout">
         <div class="hero-text animate-on-scroll">
-          <p class="hero-intro">Full Stack Developer</p>
+          <p class="hero-intro" data-i18n="hero.intro">Full Stack Developer</p>
           <h1>Rahmat Suhadi</h1>
-          <h2>Membangun <span class="typing-effect"></span></h2>
-          <p class="hero-summary">
+          <h2><span data-i18n="hero.typingPrefix">Membangun </span><span class="typing-effect"></span></h2>
+          <p class="hero-summary" data-i18n="hero.summary">
             Fokus menciptakan pengalaman web yang modern, performa tinggi, dan mudah digunakan.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="cta-button primary">
-              Lihat Karya
+              <span data-i18n="hero.cta.work">Lihat Karya</span>
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="#" class="cta-button secondary">
+            <a href="./profile/resume.pdf" target="_blank" class="cta-button secondary">
               <i class="fa-solid fa-download"></i>
-              Download CV
+              <span data-i18n="hero.cta.cv">Download CV</span>
             </a>
             <a href="https://github.com/rahmatsuhadi" target="_blank" class="cta-button secondary icon-only"
               aria-label="GitHub">
@@ -127,18 +136,18 @@
     <section id="about" class="content-section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-subtitle">01. Tentang Saya</span>
-          <h2>Detail & Kreativitas</h2>
+          <span class="section-subtitle" data-i18n="about.subtitle">01. Tentang Saya</span>
+          <h2 data-i18n="about.title">Detail & Kreativitas</h2>
         </div>
         <div class="about-content animate-on-scroll">
-          <p>
+          <p data-i18n="about.p1">
             Saya adalah web developer yang berbasis di Yogyakarta. Saya percaya bahwa kode yang baik harus bersih,
             efisien, dan mudah dipelihara.
             Spesialisasi saya adalah ekosistem JavaScript (React, Next.js) dengan ketertarikan mendalam pada desain
             antarmuka.
           </p>
           <br>
-          <p>
+          <p data-i18n="about.p2">
             Saat ini saya aktif mengembangkan solusi digital yang tidak hanya berfungsi dengan baik, tetapi juga
             memberikan pengalaman visual yang menyenangkan bagi pengguna.
           </p>
@@ -149,8 +158,8 @@
     <section id="projects" class="content-section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-subtitle">02. Selected Work</span>
-          <h2>Project Overview</h2>
+          <span class="section-subtitle" data-i18n="projects.subtitle">02. Selected Work</span>
+          <h2 data-i18n="projects.title">Project Overview</h2>
         </div>
         <div class="projects-grid">
           <div class="project-card animate-on-scroll">
@@ -159,7 +168,7 @@
             </div>
             <div class="project-content">
               <h3>Dearly</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.dearly.desc">
                 Platform Kartu Ucapan digital inovatif dengan manajemen Dashboard tamu komprehensif dan integrasi AI
                 untuk pembuatan konten personal.
               </p>
@@ -167,8 +176,8 @@
                 <span>Next.js</span><span>Tailwind</span><span>Framer Motion</span>
               </div>
               <div class="project-links-wrapper">
-                <a href="https://dearly-liard.vercel.app/" target="_blank" class="project-action">Live Demo <i
-                    class="fas fa-external-link-alt"></i></a>
+                <a href="https://dearly-liard.vercel.app/" target="_blank" class="project-action"><span
+                    data-i18n="project.livedemo">Live Demo</span> <i class="fas fa-external-link-alt"></i></a>
                 <a href="https://github.com/rahmatsuhadi/dearly" target="_blank" class="project-action">GitHub <i
                     class="fab fa-github"></i></a>
               </div>
@@ -181,7 +190,7 @@
             </div>
             <div class="project-content">
               <h3>Khayangan</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.khayangan.desc">
                 Dashboard terpusat untuk orkestrasi dan manajemen resource hypervisor OpenStack serta VMware, dirancang
                 untuk efisiensi infrastruktur cloud.
               </p>
@@ -189,7 +198,8 @@
                 <span>Next.js</span><span>Tailwind</span><span>GraphQL</span>
               </div>
               <div class="project-links-wrapper">
-                <span class="project-action"><i class="fas fa-lock"></i> Internal / Private Project</span>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.internal">Internal /
+                    Private Project</span></span>
               </div>
             </div>
           </div>
@@ -200,7 +210,7 @@
             </div>
             <div class="project-content">
               <h3>Parisada</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.parisada.desc">
                 Solusi konferensi video real-time responsif yang dilengkapi dengan fitur chat interaktif, berbagi layar,
                 dan kolaborasi berbasis WebRTC.
               </p>
@@ -208,9 +218,10 @@
                 <span>React</span><span>WebRTC</span><span>REST API</span>
               </div>
               <div class="project-links-wrapper">
-                <a href="https://parisada.id/" target="_blank" class="project-action">Live Demo <i
-                    class="fas fa-external-link-alt"></i></a>
-                <span class="project-action"><i class="fas fa-lock"></i> Private Repo</span>
+                <a href="https://parisada.id/" target="_blank" class="project-action"><span
+                    data-i18n="project.livedemo">Live Demo</span> <i class="fas fa-external-link-alt"></i></a>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.privaterepo">Private
+                    Repo</span></span>
               </div>
             </div>
           </div>
@@ -221,7 +232,7 @@
             </div>
             <div class="project-content">
               <h3>Panenin</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.panenin.desc">
                 Ekosistem e-commerce yang memberdayakan petani lokal dengan menghubungkan mereka langsung ke konsumen
                 melalui platform jual-beli hasil tani yang efisien.
               </p>
@@ -229,7 +240,8 @@
                 <span>Next.js</span><span>Tailwind</span>
               </div>
               <div class="project-links-wrapper">
-                <span class="project-action"><i class="fas fa-lock"></i> Internal / Private Project</span>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.internal">Internal /
+                    Private Project</span></span>
               </div>
             </div>
           </div>
@@ -240,7 +252,7 @@
             </div>
             <div class="project-content">
               <h3>Sellon</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.sellon.desc">
                 Aplikasi mobile marketplace yang dirancang khusus untuk memperluas jangkauan pasar digital bagi UMKM dan
                 produk lokal.
               </p>
@@ -248,7 +260,8 @@
                 <span>React Native</span><span>GraphQL</span>
               </div>
               <div class="project-links-wrapper">
-                <span class="project-action"><i class="fas fa-lock"></i> Internal / Private Project</span>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.internal">Internal /
+                    Private Project</span></span>
               </div>
             </div>
           </div>
@@ -259,7 +272,7 @@
             </div>
             <div class="project-content">
               <h3>BDA Talent</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.bda.desc">
                 Sistem informasi manajemen pendaftaran dan seleksi peserta yang terukur untuk kompetisi pencarian bakat
                 dalam bidang IT.
               </p>
@@ -267,7 +280,8 @@
                 <span>Next.js</span><span>Tailwind</span>
               </div>
               <div class="project-links-wrapper">
-                <span class="project-action"><i class="fas fa-lock"></i> Internal / Private Project</span>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.internal">Internal /
+                    Private Project</span></span>
               </div>
             </div>
           </div>
@@ -278,7 +292,7 @@
             </div>
             <div class="project-content">
               <h3>Taman Budaya</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.tby.desc">
                 Pengembangan Lanjutan Platform Sistem reservasi gedung dan manajemen jadwal acara yang terintegrasi
                 penuh untuk optimalisasi
                 operasional Taman Budaya Yogyakarta.
@@ -289,7 +303,8 @@
               <div class="project-links-wrapper">
                 <a href="https://tby.jogjaprov.go.id/reservasi/gedung/index" target="_blank" class="project-action">Live
                   Demo <i class="fas fa-external-link-alt"></i></a>
-                <span class="project-action"><i class="fas fa-lock"></i> Private Repo</span>
+                <span class="project-action"><i class="fas fa-lock"></i> <span data-i18n="project.privaterepo">Private
+                    Repo</span></span>
               </div>
             </div>
           </div>
@@ -299,7 +314,7 @@
             </div>
             <div class="project-content">
               <h3>SlemanMart</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.slemanmart.desc">
                 Platform marketplace terpadu yang memfasilitasi transaksi digital dan promosi produk unggulan UMKM di
                 wilayah Sleman.
               </p>
@@ -307,8 +322,8 @@
                 <span>Next.js</span><span>Tailwind</span><span>REST API</span>
               </div>
               <div class="project-links-wrapper">
-                <a href="https://slemanmart.slemankab.go.id/" target="_blank" class="project-action">Live Demo <i
-                    class="fas fa-external-link-alt"></i></a>
+                <a href="https://slemanmart.slemankab.go.id/" target="_blank" class="project-action"><span
+                    data-i18n="project.livedemo">Live Demo</span> <i class="fas fa-external-link-alt"></i></a>
                 <a href="https://github.com/rahmatsuhadi/umse" target="_blank" class="project-action">GitHub <i
                     class="fab fa-github"></i></a>
               </div>
@@ -320,14 +335,17 @@
             </div>
             <div class="project-content">
               <h3>Kanti Arta</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.kantiarta.desc">
                 Platform Finance Trakcer Mobile Website Base PWA untuk mengelola pengeularan uang sehari hari.
               </p>
               <div class="project-tech">
                 <span>React Vite</span><span>Tailwind</span><span>Dixie js</span>
               </div>
               <div class="project-links-wrapper">
-                <span class="project-action"><i class="fas fa-lock"></i> Internal / Private Project</span>
+                <a href="https://kantiarta.vercel.app/" target="_blank" class="project-action"><span
+                    data-i18n="project.livedemo">Live Demo</span> <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/rahmatsuhadi/personal-finance" target="_blank" class="project-action">GitHub <i
+                    class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -338,7 +356,7 @@
             </div>
             <div class="project-content">
               <h3>Kawis Kita</h3>
-              <p class="project-description">
+              <p class="project-description" data-i18n="project.kawiskita.desc">
                 Platform digital yang dikembangkan sebagai solusi komprehensif untuk mendukung ekosistem pariwisata
                 berbasis komunitas, dengan sistem geolocation wilayah terdekat.
               </p>
@@ -346,9 +364,10 @@
                 <span>Next Js</span><span>Tailwind</span><span>PostgreSQL</span>
               </div>
               <div class="project-links-wrapper">
-                <a href="https://kawiskita.id/" target="_blank" class="project-action">Live Demo <i
-                    class="fas fa-external-link-alt"></i></a>
-                <span class="project-action"><i class="fas fa-lock"></i> Private Repo</span>
+                <a href="https://kawiskita.id/" target="_blank" class="project-action"><span
+                    data-i18n="project.livedemo">Live Demo</span> <i class="fas fa-external-link-alt"></i></a>
+                <a href="https://github.com/rahmatsuhadi/kawis" target="_blank" class="project-action">GitHub <i
+                    class="fab fa-github"></i></a>
 
               </div>
             </div>
@@ -361,8 +380,8 @@
     <section id="experience" class="content-section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-subtitle">03. Pengalaman</span>
-          <h2>Jejak Karir</h2>
+          <span class="section-subtitle" data-i18n="exp.subtitle">03. Pengalaman</span>
+          <h2 data-i18n="exp.title">Jejak Karir</h2>
         </div>
 
         <div class="experience-grid">
@@ -374,8 +393,9 @@
               <h4>Frontend Developer</h4>
               <p class="company">PT. Daya Gagas Internasional</p>
               <p class="date">Agustus 2025 - Desember 2025</p>
-              <p class="exp-description">
-                Berperan sebagai Frontend Developer dalam merancang dan mengembangkan antarmuka untuk berbagai proyek internal perusahaan serta proyek-proyek privat berskala pemerintahan.
+              <p class="exp-description" data-i18n="exp.work1.desc">
+                Berperan sebagai Frontend Developer dalam merancang dan mengembangkan antarmuka untuk berbagai proyek
+                internal perusahaan serta proyek-proyek privat berskala pemerintahan.
               </p>
             </div>
           </div>
@@ -388,8 +408,10 @@
               <h4>Full Stack Developer</h4>
               <p class="company">PT. Carakan Sadhana Dirgantara</p>
               <p class="date">September 2021 - Juli 2025</p>
-              <p class="exp-description">
-                Bertanggung jawab penuh dalam siklus pengembangan sisi <i>backend</i> maupun <i>frontend</i> untuk berbagai proyek internal dan klien. Berfokus pada perancangan arsitektur yang tangguh untuk memastikan performa tinggi serta skalabilitas sistem yang optimal.
+              <p class="exp-description" data-i18n="exp.work2.desc">
+                Bertanggung jawab penuh dalam siklus pengembangan sisi <i>backend</i> maupun <i>frontend</i> untuk
+                berbagai proyek internal dan klien. Berfokus pada perancangan arsitektur yang tangguh untuk memastikan
+                performa tinggi serta skalabilitas sistem yang optimal.
               </p>
             </div>
           </div>
@@ -402,8 +424,10 @@
               <h4>Information Technology</h4>
               <p class="company">Universitas AMIKOM Yogyakarta</p>
               <p class="date">2023 - Sekarang</p>
-              <p class="exp-description">
-                Fokus akademik di bidang Informatika dengan peminatan utama pada <i>Web Programming</i>. Turut mempelajari serta mempraktikkan perancangan infrastruktur aplikasi web dan integrasi sistem <i>Artificial Intelligence</i> (AI).
+              <p class="exp-description" data-i18n="exp.edu.desc">
+                Fokus akademik di bidang Informatika dengan peminatan utama pada <i>Web Programming</i>. Turut
+                mempelajari serta mempraktikkan perancangan infrastruktur aplikasi web dan integrasi sistem
+                <i>Artificial Intelligence</i> (AI).
               </p>
             </div>
           </div>
@@ -411,7 +435,7 @@
 
         <div class="content-section">
           <div class="section-header animate-on-scroll" style="margin-bottom: 2rem; text-align: left;">
-            <h3>Tech Stack</h3>
+            <h3 data-i18n="skills.title">Tech Stack</h3>
           </div>
           <div class="skills-grid animate-on-scroll">
             <div class="skill-card glass-card">
@@ -423,16 +447,35 @@
               <span>React</span>
             </div>
             <div class="skill-card glass-card">
+              <i class="devicon-nuxtjs-plain"></i>
+              <span>Nuxt.js</span>
+            </div>
+            <div class="skill-card glass-card">
+              <i class="devicon-vuejs-plain"></i>
+              <span>Vue.js</span>
+            </div>
+
+            <div class="skill-card glass-card">
+              <i class="devicon-nodejs-plain"></i>
+              <span>Node.js</span>
+            </div>
+
+            <div class="skill-card glass-card">
               <i class="devicon-typescript-plain"></i>
               <span>TypeScript</span>
             </div>
             <div class="skill-card glass-card">
-              <i class="devicon-tailwindcss-original"></i>
-              <span>Tailwind CSS</span>
+              <i class="devicon-laravel-original"></i>
+              <span>Laravel</span>
             </div>
             <div class="skill-card glass-card">
-              <i class="devicon-nodejs-plain"></i>
-              <span>Node.js</span>
+              <i class="devicon-codeigniter-plain"></i>
+              <span>CodeIgniter</span>
+            </div>
+
+            <div class="skill-card glass-card">
+              <i class="devicon-tailwindcss-original"></i>
+              <span>Tailwind CSS</span>
             </div>
             <div class="skill-card glass-card">
               <i class="devicon-mysql-plain"></i>
@@ -450,26 +493,6 @@
               <i class="devicon-github-original"></i>
               <span>GitHub</span>
             </div>
-            <div class="skill-card glass-card">
-              <i class="devicon-nuxtjs-plain"></i>
-              <span>Nuxt.js</span>
-            </div>
-            <div class="skill-card glass-card">
-              <i class="devicon-vuejs-plain"></i>
-              <span>Vue.js</span>
-            </div>
-            <div class="skill-card glass-card">
-              <i class="devicon-laravel-original"></i>
-              <span>Laravel</span>
-            </div>
-            <div class="skill-card glass-card">
-              <i class="devicon-codeigniter-plain"></i>
-              <span>CodeIgniter</span>
-            </div>
-            <div class="skill-card glass-card">
-              <i class="fa-solid fa-cube"></i>
-              <span>Elysia.js</span>
-            </div>
           </div>
         </div>
       </div>
@@ -478,16 +501,16 @@
     <section id="contact" class="content-section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-subtitle">04. Kontak</span>
-          <h2>Mari Terhubung</h2>
+          <span class="section-subtitle" data-i18n="contact.subtitle">04. Kontak</span>
+          <h2 data-i18n="contact.title">Mari Terhubung</h2>
         </div>
-        <p class="contact-pitch animate-on-scroll">
+        <p class="contact-pitch animate-on-scroll" data-i18n="contact.pitch">
           Tertarik bekerja sama atau sekadar ingin menyapa? Saya selalu terbuka untuk diskusi baru.
         </p>
         <div class="contact-links animate-on-scroll">
           <a href="mailto:rahmatsuhadi32@gmail.com" class="cta-button primary">
             <i class="fas fa-envelope"></i>
-            Kirim Email
+            <span data-i18n="contact.cta.email">Kirim Email</span>
           </a>
           <a href="https://www.linkedin.com/in/rahmat-suhadi" target="_blank" class="cta-button secondary">
             <i class="fab fa-linkedin"></i>
@@ -513,6 +536,7 @@
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 

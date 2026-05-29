@@ -15,6 +15,51 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 
+  // Language Logic
+  const langToggle = document.getElementById("lang-toggle");
+  let currentLang = localStorage.getItem("lang") || "id";
+  
+  const typingData = {
+    id: ["Pengalaman Digital", "Aplikasi Web Modern", "Solusi Skalabel"],
+    en: ["Digital Experiences", "Modern Web Apps", "Scalable Solutions"]
+  };
+  
+  window.typingTexts = typingData[currentLang];
+
+  const typingElement = document.querySelector(".typing-effect");
+  let typingIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 100;
+
+  function updateLanguage(lang) {
+    document.documentElement.lang = lang;
+    if(langToggle) langToggle.textContent = lang.toUpperCase();
+    
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    window.typingTexts = typingData[lang];
+    charIndex = 0;
+    typingIndex = 0;
+    isDeleting = false;
+    if(typingElement) typingElement.textContent = "";
+  }
+
+  updateLanguage(currentLang);
+
+  if(langToggle) {
+    langToggle.addEventListener("click", () => {
+      currentLang = currentLang === "id" ? "en" : "id";
+      localStorage.setItem("lang", currentLang);
+      updateLanguage(currentLang);
+    });
+  }
+
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
 
@@ -59,16 +104,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const typingElement = document.querySelector(".typing-effect");
-  const typingTexts = ["Pengalaman Digital", "Aplikasi Web Modern", "Solusi Skalabel"];
-  let typingIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 100;
 
   function typeText() {
     if (!typingElement) return;
-    const currentText = typingTexts[typingIndex];
+    if (typingIndex >= window.typingTexts.length) typingIndex = 0;
+    const currentText = window.typingTexts[typingIndex];
 
     if (isDeleting) {
       typingElement.textContent = currentText.substring(0, charIndex - 1);
