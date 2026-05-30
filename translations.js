@@ -32,6 +32,7 @@ const translations = {
     "project.slemanmart.desc": "Platform marketplace terpadu yang memfasilitasi transaksi digital dan promosi produk unggulan UMKM di wilayah Sleman.",
     "project.kantiarta.desc": "Platform Finance Tracker Mobile Website Base PWA untuk mengelola pengeluaran uang sehari hari.",
     "project.kawiskita.desc": "Platform digital yang dikembangkan sebagai solusi komprehensif untuk mendukung ekosistem pariwisata berbasis komunitas, dengan sistem geolocation wilayah terdekat.",
+    "project.mocky.desc":"Platform digital yang membantu frontend developer dalam menguji sistem melalui penyediaan mock API siap pakai. Seluruh dummy data yang dihasilkan bersumber dari library Faker.js.",
     
     "exp.subtitle": "03. Pengalaman",
     "exp.title": "Jejak Karir",
@@ -83,7 +84,8 @@ const translations = {
     "project.slemanmart.desc": "Integrated marketplace platform facilitating digital transactions and promotion of MSME flagship products in the Sleman region.",
     "project.kantiarta.desc": "PWA-based Mobile Website Finance Tracker platform for managing daily financial expenses.",
     "project.kawiskita.desc": "Digital platform developed as a comprehensive solution to support community-based tourism ecosystems, featuring nearest region geolocation systems.",
-    
+       "project.mocky.desc":"A digital platform that assists frontend developers in system testing by providing ready-to-use mock APIs. All generated dummy data is powered by the Faker.js library."
+, 
     "exp.subtitle": "03. Experience",
     "exp.title": "Career Path",
     
