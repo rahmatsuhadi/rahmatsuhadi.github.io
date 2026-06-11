@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  /* Core Colors */
+  --bg-color: #050505;
+  --surface-color: #0a0a0a;
+  --card-bg: #111111;
+  --border-color: #222;
+  --border-hover: #333;
+  
+  /* Text Colors */
+  --text-primary: #ededed;
+  --text-secondary: #a1a1a1;
+  --text-tertiary: #666;
+
+  /* Brand Colors */
+  --accent-primary: #00f0ff; /* Electric Cyan */
+  --accent-glow: rgba(0, 240, 255, 0.15);
+  
+  /* Layout */
+  --container-width: 1024px;
+  --header-height: 80px;
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+}
+
+/* Light Mode Custom Class (Akan dipicu manual melalui State HTML) */
+.light-mode {
+  --bg-color: #f4f6f8; /* Soft off-white to reduce glare */
+  --surface-color: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --text-primary: #1e293b; /* Softer dark text instead of pure black */
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+  --accent-primary: #0284c7; /* Slightly deeper accent for better contrast */
+  --accent-glow: rgba(2, 132, 199, 0.15);
+}
+
+@theme {
+  --color-background: var(--bg-color);
+  --color-foreground: var(--text-primary);
+  --font-sans: var(--font-plus-jakarta), sans-serif;
+  --font-heading: var(--font-outfit), sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.light-mode body {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+/* Animasi Scroll Scroll Observer */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Cursor Sparkle Effect */
+.cursor-sparkle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 12px 4px var(--accent-primary), 0 0 25px 8px var(--accent-primary);
+  opacity: 1;
+  animation: sparkle-fade 1.5s forwards cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes sparkle-fade {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) translate(var(--tx), var(--ty));
+    opacity: 0;
+  }
+}
+
+/* Background Geometry Shapes */
+.geo-shape {
+  position: absolute;
+  background: var(--accent-primary);
+  opacity: 0.08;
+  transition: opacity 0.5s ease;
+  filter: blur(3px);
+}
+
+.light-mode .geo-shape {
+  opacity: 0.15;
+}
