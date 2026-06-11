@@ -6,12 +6,14 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -65,6 +67,10 @@ export default async function LocaleLayout({
       className={`${plusJakartaSans.variable} ${outfit.variable} h-full antialiased`}
     >
       <head>
+        {/* Preconnect to CDN domains to improve connection times */}
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        
         {/* CDN Link untuk FontAwesome dan Devicons */}
         <link
           rel="stylesheet"
