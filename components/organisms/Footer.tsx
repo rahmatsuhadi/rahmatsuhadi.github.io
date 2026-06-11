@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             <i className="fab fa-github"></i>
           </a>
           <a
-            href="https://instagram.com/rahmatsuhadi_"
+            href="https://www.instagram.com/m.matt_/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[color:var(--text-tertiary)] hover:text-[color:var(--text-primary)] text-xl transition-colors duration-200"

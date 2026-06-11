@@ -20,21 +20,28 @@ export const metadata: Metadata = {
   keywords: "Rahmat Suhadi, full stack developer, frontend developer, web developer, portfolio, React.js, Next.js, JavaScript, Tailwind CSS, Yogyakarta, Indonesia",
   authors: [{ name: "Rahmat Suhadi" }],
   robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico",
+  },
   alternates: {
-    canonical: "https://rahmatsuhadi.github.io/",
+    canonical: "http://mattz.my.id/",
+    languages: {
+      id: "http://mattz.my.id/id",
+      en: "http://mattz.my.id/en",
+    },
   },
   openGraph: {
     type: "website",
-    url: "https://rahmatsuhadi.github.io/",
+    url: "http://mattz.my.id/",
     title: "Rahmat Suhadi | Full Stack Developer",
     description: "Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX.",
-    images: [{ url: "https://rahmatsuhadi.github.io/profile/me_no_exif.jpg" }],
+    images: [{ url: "http://mattz.my.id/profile/me_no_exif.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rahmat Suhadi | Full Stack Developer",
     description: "Portofolio Rahmat Suhadi, Full Stack Web Developer spesialis React, Next.js, dan modern UI/UX.",
-    images: ["https://rahmatsuhadi.github.io/profile/me_no_exif.jpg"],
+    images: ["http://mattz.my.id/profile/me_no_exif.jpg"],
   },
 };
 
