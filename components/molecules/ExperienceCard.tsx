@@ -1,4 +1,5 @@
 import React from "react";
+import { Text } from "../atoms/Text";
 
 interface ExperienceCardProps {
   role: string;
@@ -28,19 +29,20 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
       {/* Content */}
       <div className="flex-1">
-        <h4 className="font-heading text-xl font-bold text-[color:var(--text-primary)] mb-1">
+        <Text as="h4" variant="heading-4" className="mb-1">
           {role}
-        </h4>
-        <p className="text-[color:var(--accent-primary)] font-medium mb-1">
+        </Text>
+        <Text as="p" className="text-[color:var(--accent-primary)] font-medium mb-1">
           {company}
-        </p>
-        <p className="text-xs font-mono text-[color:var(--text-tertiary)] mb-4">
+        </Text>
+        <Text as="p" variant="meta" className="mb-4">
           {date}
-        </p>
-        <p
+        </Text>
+        <Text
+          as="p"
           className="text-[color:var(--text-secondary)] text-sm leading-relaxed"
           dangerouslySetInnerHTML={{ __html: description }}
-        ></p>
+        />
       </div>
     </div>
   );

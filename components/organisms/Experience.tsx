@@ -1,6 +1,7 @@
 import React from "react";
 import { ExperienceCard } from "../molecules/ExperienceCard";
 import { SkillCard } from "../molecules/SkillCard";
+import { Text } from "../atoms/Text";
 
 interface ExperienceProps {
   dict: any;
@@ -64,12 +65,12 @@ export const Experience: React.FC<ExperienceProps> = ({ dict }) => {
       <div className="max-w-[1024px] mx-auto px-6 w-full">
         {/* Section Header */}
         <div className="mb-16 animate-on-scroll">
-          <span className="text-xs font-semibold uppercase tracking-widest text-[color:var(--accent-primary)] mb-2 block">
+          <Text as="span" variant="caption" className="mb-2">
             {dict["exp.subtitle"]}
-          </span>
-          <h2 className="font-heading text-4xl font-bold tracking-tight text-[color:var(--text-primary)]">
+          </Text>
+          <Text as="h2" variant="heading-2">
             {dict["exp.title"]}
-          </h2>
+          </Text>
         </div>
 
         {/* Experience Grid */}
@@ -89,17 +90,17 @@ export const Experience: React.FC<ExperienceProps> = ({ dict }) => {
         {/* Skills Section */}
         <div className="animate-on-scroll">
           <div className="mb-8 text-left">
-            <h3 className="font-heading text-2xl font-semibold text-[color:var(--text-secondary)] tracking-wide">
+            <Text as="h3" className="font-heading text-2xl font-semibold text-[color:var(--text-secondary)] tracking-wide">
               {dict["skills.title"]}
-            </h3>
+            </Text>
           </div>
 
           <div className="space-y-12">
             {skillCategories.map((category, idx) => (
               <div key={idx} className="space-y-4">
-                <h4 className="font-heading text-lg font-semibold text-[color:var(--text-secondary)] tracking-wide">
+                <Text as="h4" className="font-heading text-lg font-semibold text-[color:var(--text-secondary)] tracking-wide">
                   {category.title}
-                </h4>
+                </Text>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                   {category.skills.map((skill, skillIdx) => (
                     <SkillCard

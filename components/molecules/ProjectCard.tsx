@@ -1,5 +1,7 @@
 import React from "react";
 import { CustomImage } from "../atoms/CustomImage";
+import { Text } from "../atoms/Text";
+import { Button } from "../atoms/Button";
 
 interface ProjectCardProps {
   title: string;
@@ -41,22 +43,23 @@ export const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
           src={imageSrc}
           alt={title}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 550px"
           className="object-contain p-4 transition-transform duration-500 ease-out hover:scale-105"
         />
       </div>
 
       {/* Konten Proyek */}
       <div
-        className={`md:flex-1 w-full flex flex-col justify-center text-left ${
+        className={`flex-1 w-full flex flex-col justify-center text-left ${
           isEven ? "md:text-right md:items-end" : "md:text-left md:items-start"
         }`}
       >
-        <h3 className="font-heading text-3xl font-bold mb-4 text-[color:var(--text-primary)]">
+        <Text as="h3" variant="heading-3" className="mb-4">
           {title}
-        </h3>
-        <p className="text-[color:var(--text-secondary)] text-base leading-relaxed mb-6">
+        </Text>
+        <Text as="p" variant="desc" className="mb-6">
           {description}
-        </p>
+        </Text>
 
         {/* Tech Stack */}
         <div className={`flex flex-wrap gap-2 ${isEven ? "md:justify-end" : "md:justify-start"}`}>
@@ -79,24 +82,24 @@ export const ProjectCard: React.FC<ProjectCardProps & { index: number }> = ({
           ) : (
             <>
               {liveLink && (
-                <a
+                <Button
                   href={liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-wider text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] flex items-center gap-2 font-mono"
+                  className="!p-0 border-none bg-transparent text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] uppercase tracking-wider font-mono text-xs"
                 >
                   {liveDemoText} <i className="fas fa-external-link-alt"></i>
-                </a>
+                </Button>
               )}
               {githubLink ? (
-                <a
+                <Button
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-bold uppercase tracking-wider text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] flex items-center gap-2 font-mono"
+                  className="!p-0 border-none bg-transparent text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] uppercase tracking-wider font-mono text-xs"
                 >
                   GitHub <i className="fab fa-github"></i>
-                </a>
+                </Button>
               ) : (
                 <span className="text-xs font-bold uppercase tracking-wider text-[color:var(--text-secondary)] flex items-center gap-2 font-mono">
                   <i className="fas fa-lock"></i> {repoPrivateText}

@@ -1,7 +1,8 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import { CustomImage } from "../atoms/CustomImage";
+import { Text } from "../atoms/Text";
+import { Button } from "../atoms/Button";
+import Link from "next/link";
 
 interface HeroProps {
   dict: any;
@@ -59,57 +60,57 @@ export const Hero: React.FC<HeroProps> = ({ dict, locale }) => {
       <div className="max-w-[1024px] mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-16 items-center text-center md:text-left">
         {/* Kolom Teks */}
         <div className="animate-on-scroll">
-          <p className="font-semibold text-[color:var(--accent-primary)] mb-4 text-sm tracking-widest uppercase">
+          <Text as="p" className="font-semibold text-[color:var(--accent-primary)] mb-4 text-sm tracking-widest uppercase">
             {dict["hero.intro"]}
-          </p>
-          <h1 className="font-heading text-5xl md:text-6xl font-bold tracking-tight mb-4 text-[color:var(--text-primary)] leading-tight">
+          </Text>
+          <Text as="h1" variant="heading-1" className="mb-4">
             Rahmat Suhadi
-          </h1>
-          <h2 className="text-2xl font-light text-[color:var(--text-secondary)] mb-8">
+          </Text>
+          <Text as="h2" className="text-2xl font-light text-[color:var(--text-secondary)] mb-8">
             <span>{dict["hero.typingPrefix"]}</span>
             <span className="font-semibold text-[color:var(--text-primary)] border-b-2 border-[color:var(--accent-primary)] pb-0.5 min-h-[1.5em] inline-block">
               {typingText}
             </span>
-          </h2>
-          <p className="text-lg text-[color:var(--text-secondary)] mb-10 max-w-[480px] leading-relaxed mx-auto md:mx-0">
+          </Text>
+          <Text as="p" variant="body" className="mb-10 max-w-[480px] mx-auto md:mx-0">
             {dict["hero.summary"]}
-          </p>
+          </Text>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <a
-              href="#projects"
-              className="px-6 py-3 border border-[color:var(--text-primary)] bg-[color:var(--text-primary)] text-[color:var(--bg-color)] font-semibold text-sm inline-flex items-center justify-center gap-2 transition-all duration-300 shadow-[0_4px_14px_0_var(--accent-glow)] hover:bg-[color:var(--accent-primary)] hover:border-[color:var(--accent-primary)] hover:text-black hover:shadow-[0_6px_20px_0_var(--accent-glow)] hover:-translate-y-0.5"
-            >
+            <Button href="#projects" variant="primary">
               <span>{dict["hero.cta.work"]}</span>
               <i className="fa-solid fa-arrow-right"></i>
-            </a>
-            <a
+            </Button>
+            <Button
+              as={Link}
               href="/profile/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border border-[color:var(--border-color)] bg-transparent text-[color:var(--text-primary)] font-semibold text-sm inline-flex items-center justify-center gap-2 transition-all duration-300 hover:border-[color:var(--accent-primary)] hover:text-[color:var(--accent-primary)] hover:bg-[color:var(--accent-primary)]/5 hover:-translate-y-0.5"
+              variant="secondary"
             >
               <i className="fa-solid fa-download"></i>
               <span>{dict["hero.cta.cv"]}</span>
-            </a>
-            <a
+            </Button>
+            <Button
+              as={Link}
               href="https://github.com/rahmatsuhadi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 border border-[color:var(--border-color)] bg-transparent text-[color:var(--text-primary)] flex items-center justify-center transition-all duration-300 hover:border-[color:var(--accent-primary)] hover:text-[color:var(--accent-primary)] hover:bg-[color:var(--accent-primary)]/5 hover:-translate-y-0.5"
-              aria-label="GitHub"
+              variant="icon"
+              ariaLabel="GitHub"
             >
               <i className="fa-brands fa-github text-lg"></i>
-            </a>
-            <a
+            </Button>
+            <Button
+              as={Link}
               href="https://www.linkedin.com/in/rahmat-suhadi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 border border-[color:var(--border-color)] bg-transparent text-[color:var(--text-primary)] flex items-center justify-center transition-all duration-300 hover:border-[color:var(--accent-primary)] hover:text-[color:var(--accent-primary)] hover:bg-[color:var(--accent-primary)]/5 hover:-translate-y-0.5"
-              aria-label="LinkedIn"
+              variant="icon"
+              ariaLabel="LinkedIn"
             >
               <i className="fa-brands fa-linkedin text-lg"></i>
-            </a>
+            </Button>
           </div>
         </div>
 
@@ -121,6 +122,7 @@ export const Hero: React.FC<HeroProps> = ({ dict, locale }) => {
               alt="Rahmat Suhadi"
               fill
               priority
+              sizes="(max-width: 768px) 300px, 400px"
               className="object-cover"
             />
           </div>
