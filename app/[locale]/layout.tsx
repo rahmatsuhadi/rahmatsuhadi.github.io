@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "../globals.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "devicon/devicon.min.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -66,23 +68,6 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${plusJakartaSans.variable} ${outfit.variable} h-full antialiased`}
     >
-      <head>
-        {/* Preconnect to CDN domains to improve connection times */}
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
-        
-        {/* CDN Link untuk FontAwesome dan Devicons */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-          precedence="default"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-          precedence="default"
-        />
-      </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         {children}
       </body>

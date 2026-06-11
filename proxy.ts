@@ -49,9 +49,9 @@ export function proxy(request: NextRequest) {
   request.nextUrl.pathname = `/${locale}${pathname}`;
   
   const response = NextResponse.redirect(request.nextUrl);
-  // Set cookie jika belum diset
+  // Set cookie jika belum diset dengan SameSite Lax dan Secure agar mematuhi aturan cookie browser modern
   if (!request.cookies.has("locale")) {
-    response.cookies.set("locale", locale, { path: "/" });
+    response.cookies.set("locale", locale, { path: "/", sameSite: "lax", secure: true });
   }
   
   return response;
