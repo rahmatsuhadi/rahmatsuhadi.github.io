@@ -22,8 +22,8 @@ export const LangToggle: React.FC<LangToggleProps> = ({ currentLocale }) => {
     segments[1] = nextLocale;
     const newPath = segments.join("/");
 
-    // Simpan di Cookie & arahkan ke halaman baru
-    document.cookie = `locale=${nextLocale}; path=/; max-age=31536000`;
+    // Simpan di Cookie & arahkan ke halaman baru dengan atribut SameSite=Lax untuk keamanan cookie
+    document.cookie = `locale=${nextLocale}; path=/; max-age=31536000; SameSite=Lax; Secure`;
     
     // Simpan scroll position di sessionStorage sebelum navigasi
     sessionStorage.setItem('scrollPosition', currentScrollY.toString());
